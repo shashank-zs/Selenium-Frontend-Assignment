@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Selenium-Frontend-Assignment" target="19" />
+      <module name="Selenium-Frontend-Assignment" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
