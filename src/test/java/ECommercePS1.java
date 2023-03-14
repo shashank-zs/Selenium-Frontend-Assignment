@@ -18,7 +18,7 @@ public class ECommercePS1 {
         webDriverUtils webd =new webDriverUtils();
         webd.browserOpen();
         WebDriver driver = webd.driver;
-        driver.get("www.google.com");
+        driver.get(URL_FOR_FLIPKART);
         HomepageFlipkart objHomepage = new HomepageFlipkart(driver);
         objHomepage.SearchingMobilePhone("Mobile Phones");
         SearchedMobilePage objMobiles = new SearchedMobilePage(driver);
