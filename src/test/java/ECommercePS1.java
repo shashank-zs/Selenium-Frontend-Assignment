@@ -23,7 +23,7 @@ public class ECommercePS1 {
         objHomepage.SearchingMobilekPhone("Mobile Phones");
         SearchedMobilePage objMobiles = new SearchedMobilePage(driver);
         Map<String, String> PhoneWithPrice = objMobiles.mobileWithPrice();
-        excelWriter dataSktored= new excelWriter();
+        excelWriter dataStored= new excelWriter();
         dataStored.excelWrite(PhoneWithPrice);
     }
 }
