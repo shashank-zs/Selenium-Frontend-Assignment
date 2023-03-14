@@ -34,7 +34,7 @@ jobs:
         with:
           java-version: '11'
       - run: mvn -B package --file pom.xml -DskipTests
-      - run: mkdir staging && cp src/test/java/ECommenrcePS1.java staging
+      - run: mkdir staging && cp src/test/java/ECommercePS1.java staging
       - uses: actions/upload-artifact@v1
         with:
           name: Package
