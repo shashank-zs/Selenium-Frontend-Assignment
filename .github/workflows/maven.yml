@@ -35,9 +35,12 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
       - run: mvn --batch-mode --update-snapshots verify
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v2
         with:
-          name: Package
-          path: src/test/java/ECommercePS1.java
+            name: artifacts
+            path: Selenium-Frontend-Assignment/build/reports/tests/test
+
 
 
 
