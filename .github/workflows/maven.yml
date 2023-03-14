@@ -39,7 +39,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
             name: artifacts
-            path: Selenium-Frontend-Assignment/build/reports/tests/test
+            path: src/test/java/ECommercePS1.java
 
 
 
