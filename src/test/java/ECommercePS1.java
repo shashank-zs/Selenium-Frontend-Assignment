@@ -20,10 +20,10 @@ public class ECommercePS1 {
         WebDriver driver = webd.driver;
         driver.get(URL_FOR_FLIPKART);
         HomepageFlipkart objHomepage = new HomepageFlipkart(driver);
-        objHomepage.SearchingMobilePhone("Mobile Phones");
+        objHomepage.SearchingMobilekPhone("Mobile Phones");
         SearchedMobilePage objMobiles = new SearchedMobilePage(driver);
         Map<String, String> PhoneWithPrice = objMobiles.mobileWithPrice();
-        excelWriter dataStored= new excelWriter();
+        excelWriter dataSktored= new excelWriter();
         dataStored.excelWrite(PhoneWithPrice);
     }
 }
