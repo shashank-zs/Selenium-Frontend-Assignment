@@ -29,12 +29,12 @@ jobs:
   automation:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-java@v1
+      - uses: actions/checkout@v3
+      - uses: actions/setup-java@v3
         with:
-          java-version: '11'
-      - run: mvn -B package --file pom.xml -DskipTests
-      - uses: actions/upload-artifact@v1
+          java-version: '17'
+          distribution: 'temurin'
+      - run: mvn --batch-mode --update-snapshots verify
         with:
           name: Package
           path: src/test/java/ECommercePS1.java
