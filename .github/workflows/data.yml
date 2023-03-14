@@ -2,7 +2,7 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "feature/assignment1" ]
   pull_request:
     branches: [ "main" ]
 
